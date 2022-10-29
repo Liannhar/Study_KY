@@ -4,15 +4,9 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-
-
     <fragment
         android:id="@+id/cat_fragment"
         android:name="com.example.dz.Fragment_main"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
-
-
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>
