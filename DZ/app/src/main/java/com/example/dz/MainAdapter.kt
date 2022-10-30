@@ -12,7 +12,7 @@ class MainAdapter(private val blocks: List<Blocks>):RecyclerView.Adapter<MainAda
 {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MainViewHolder
     {
-        val view = LayoutInflater.from(parent.context).inflate(R.layout.tabl,null)
+        val view = LayoutInflater.from(parent.context).inflate(R.layout.tabl,parent,false)
         return MainViewHolder(view)
     }
 
