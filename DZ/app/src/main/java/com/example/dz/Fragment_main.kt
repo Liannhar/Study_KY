@@ -15,16 +15,12 @@ import com.google.android.material.floatingactionbutton.ExtendedFloatingActionBu
 class FragmentMain : Fragment() {
 
     private var i=0
-    /*override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
 
-    }*/
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_main, container, false)
     }
 
@@ -60,7 +56,6 @@ class FragmentMain : Fragment() {
     override fun onSaveInstanceState(outState: Bundle) {
         super.onSaveInstanceState(outState)
         outState.putInt("counter", i)
-        //outState.putParcelableArrayList("list",java.util.ArrayList<latLong>(blocks))
     }
 
 
@@ -88,11 +83,5 @@ class FragmentMain : Fragment() {
         }
     }
 
-    /*companion object {
-        fun newInstance(param1: String, param2: String) =
-            FragmentMain().apply {
-                arguments = Bundle().apply {
-                }
-            }
-    }*/
+
 }
